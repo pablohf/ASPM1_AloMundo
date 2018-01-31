@@ -13,5 +13,17 @@ namespace ASPM1_AloMundo
         {
 
         }
+
+        protected void btExecutar_Click(object sender, EventArgs e)
+        {
+            if (txtMsg.Text == "")
+            {
+                lMsg.Text = "<h1>Alô Mundo - Aula 1</h1>";
+            }
+            else
+            {
+                lMsg.Text = "<h1>" +txtMsg.Text+ "</h1>";
+            }
+        }
     }
 }
